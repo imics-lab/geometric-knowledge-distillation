@@ -52,11 +52,6 @@ This project requires the following dependencies:
 - `pandas`
 - `tqdm`
 
-These dependencies are listed in the `environment.yml` file. Install them by running:
-
-```bash
-conda env create -f environment.yml
-
 
 
 
@@ -64,16 +59,6 @@ conda env create -f environment.yml
 <!-- CITATION -->
 ## Citation
 
-> `### <<< DELETE ME:` ***Citation***
->  
-> Adding a citation to your README will make it easier for others to cite your
-> work. Add your bibtext citation to the README below. GitHub also will
->  automatically detect [Citation File Format (`.cff`) files](https://citation-file-format.github.io/),
-> rendering a "Cite this repository" button. See [GitHub's tutorial](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
-> for more information. The example from this tutorial is included in 
-> [CITATION.cff](CITATION.cff), and should be modified or deleted.
-> 
-> `### DELETE ME >>>`
 
 
 ```bibtex
