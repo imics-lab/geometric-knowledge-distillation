@@ -1,25 +1,63 @@
-> `### <<< DELETE ME:` ***Template***
->  
-> This template contains some useful structure and convention for new research
-> projects that will help you get started more quickly, and will make your
-> code more accessible, maintainable, and reproducible. This will make your
-> work more likely to be adopted by others!
->
-> I highly recommend taking a second to read Patrick Mineault's
-> [Good Research Code Handbook](https://goodresearch.dev/index.html) if you are
-> in the process of starting a new project for many tips that will help you
-> beyond the initial setup phase.
->
-> > *Note:* You should delete everything within markdown blockquotes `>` before
-> going live with your project.
-> 
-> `### DELETE ME >>>`
+# Geometric Knowledge Distillation
 
+## Geometric Knowledge Distillation
 
-<div align="center">
+This project implements knowledge distillation techniques using geometric transformations, focusing on three main models for each dataset: **KNN**, **Transformer**, and **Distillation**. The experiments are carried out on two datasets: **Skeleton** and **Signum**. The objective is to evaluate how each model performs on different geometric transformation tasks.
 
+## Description
 
-<!-- TITLE -->
+This repository provides an implementation of geometric knowledge distillation for improving machine learning model performance through transformation-based techniques. We explore and compare different methods such as KNN, Transformers, and Distillation models on two datasets: **Skeleton** and **Signum**. The experiments are designed to evaluate performance on both synthetic and real-world datasets.
+
+## Setup
+
+### Conda Virtual Environment
+
+Below are some base instructions for setting up the environment. For best practices, please use `conda` to manage your environments.
+
+1. Create the Conda virtual environment using the `environment.yml` file:
+
+    ```bash
+    conda env create -f environment.yml
+    ```
+
+2. Activate the environment:
+
+    ```bash
+    conda activate YOUR_PROJECT_NAME
+    ```
+
+3. Set the Python path dynamically for the environment:
+
+    ```bash
+    conda env config vars set PYTHONPATH=$(pwd):$(pwd)/src
+    ```
+
+4. Verify that the environment has been created and activated:
+
+    ```bash
+    conda info --envs
+    ```
+
+### Dependencies
+
+This project requires the following dependencies:
+
+- Python >= 3.7
+- `conda`
+- `PyTorch`
+- `scikit-learn`
+- `transformers`
+- `matplotlib`
+- `numpy`
+- `pandas`
+- `tqdm`
+
+These dependencies are listed in the `environment.yml` file. Install them by running:
+
+```bash
+conda env create -f environment.yml
+
+!-- TITLE -->
 # Project Template `> REPLACE ME`
 A new project template for research projects. `> REPLACE ME`
 
