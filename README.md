@@ -1,50 +1,70 @@
-<<<<<<< HEAD
 # Geometric Knowledge Distillation
 
-## Geometric Knowledge Distillation
+## Overview
+This repository implements **Geometric Knowledge Distillation**, applying transformation-based knowledge distillation techniques to improve machine learning model performance. The project focuses on three primary models:
+- **KNN (k-Nearest Neighbors)**
+- **Transformer-based models**
+- **Distillation models**
 
-This project implements knowledge distillation techniques using geometric transformations, focusing on three main models for each dataset: **KNN**, **Transformer**, and **Distillation**. The experiments are carried out on two datasets: **Skeleton** and **Signum**. The objective is to evaluate how each model performs on different geometric transformation tasks.
+The experiments are conducted on two datasets:
+- **Skeleton Dataset** (included in the repository)
+- **Signum Dataset** (not included due to size limitations)
 
-## Description
+## Repository Structure
+```
+.github/workflows/      # CI/CD workflows (GitHub Actions)
+data/                   # Skeleton dataset (Signum dataset not included due to size)
+docs/                   # Documentation files
+results/                # Output results from experiments
+scripts/                # Scripts for running different algorithms
+tests/                  # Unit tests for verifying implementations
+src/                    # Core source files for geometric knowledge distillation
+.amlignore              # Azure ML ignore file (similar to .gitignore)
+.gitignore              # Files ignored by Git
+.pre-commit-config.yaml # Pre-commit hooks configuration
+CITATION.cff            # Citation information
+LICENSE                 # License details
+README.md               # This file
+environment.yml         # Conda environment setup file
+setup.py                # Project setup file
+```
 
-This repository provides an implementation of geometric knowledge distillation for improving machine learning model performance through transformation-based techniques. We explore and compare different methods such as KNN, Transformers, and Distillation models on two datasets: **Skeleton** and **Signum**. The experiments are designed to evaluate performance on both synthetic and real-world datasets.
+## Scripts
+The `scripts/` directory contains implementations for different algorithms used in the project:
+```
+scripts/
+│── knn_signum.py                  # KNN model for Signum dataset
+│── knn_skeleton_git.py             # KNN model for Skeleton dataset
+│── signum_distillation.ipynb       # Distillation model for Signum dataset
+│── signum_transformer.ipynb        # Transformer model for Signum dataset
+│── skeleton_distillation.ipynb     # Distillation model for Skeleton dataset
+│── skeleton_procrustes.py          # Procrustes analysis on Skeleton dataset
+│── skeleton_transformer.ipynb      # Transformer model for Skeleton dataset
+```
 
 ## Setup
-
 ### Conda Virtual Environment
-
-Below are some base instructions for setting up the environment. For best practices, please use `conda` to manage your environments.
-
-1. Create the Conda virtual environment using the `environment.yml` file:
-
+To set up the environment, follow these steps:
+1. Create the Conda virtual environment using `environment.yml`:
     ```bash
     conda env create -f environment.yml
     ```
-
 2. Activate the environment:
-
     ```bash
-    conda activate YOUR_PROJECT_NAME
+    conda activate geometric-kd
     ```
-
-3. Set the Python path dynamically for the environment:
-
+3. Set the Python path dynamically:
     ```bash
     conda env config vars set PYTHONPATH=$(pwd):$(pwd)/src
     ```
-
-4. Verify that the environment has been created and activated:
-
+4. Verify the environment setup:
     ```bash
     conda info --envs
     ```
 
 ### Dependencies
-
 This project requires the following dependencies:
-
 - Python >= 3.7
-- `conda`
 - `PyTorch`
 - `scikit-learn`
 - `transformers`
@@ -53,22 +73,30 @@ This project requires the following dependencies:
 - `pandas`
 - `tqdm`
 
+## Data Availability
+- **Skeleton Dataset** is included in `data/`
+- **Skeleton Results** are available in `results/`
+- **Signum Dataset & Results** are not included due to size limitations
 
+## Running Experiments
+To run the models on the datasets:
+```bash
+python scripts/skeleton_procrustes.py  # Runs the skeleton dataset experiments
+python scripts/knn_signum.py           # Runs KNN on Signum dataset
+python scripts/knn_skeleton_git.py     # Runs KNN on Skeleton dataset
+```
+For other experiments, refer to the `.ipynb` notebooks in the `scripts/` directory.
 
-
-
-<!-- CITATION -->
 ## Citation
-
-
-
+If you use this work, please cite:
 ```bibtex
 @article{YourName,
-  title={Your Title},
+  title={Geometric Knowledge Distillation},
   author={Your team},
   year={Year}
 }
 ```
 
-=======
->>>>>>> 92f178c (Adding files)
+## License
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
