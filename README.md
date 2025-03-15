@@ -51,7 +51,7 @@ To set up the environment, follow these steps:
     ```
 2. Activate the environment:
     ```bash
-    conda activate geometric-kd
+    conda activate distillation
     ```
 3. Set the Python path dynamically:
     ```bash
