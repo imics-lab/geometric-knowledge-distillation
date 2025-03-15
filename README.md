@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Geometric Knowledge Distillation
 
 ## Geometric Knowledge Distillation
@@ -69,3 +70,5 @@ This project requires the following dependencies:
 }
 ```
 
+=======
+>>>>>>> 92f178c (Adding files)
