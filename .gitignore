@@ -268,4 +268,5 @@ $RECYCLE.BIN/
 
 #Extras
 *.amlignore
+*.amltmp
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,data,linux,macos,windows
