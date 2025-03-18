@@ -89,7 +89,7 @@ python scripts/knn_signum.py           # Runs KNN on Signum dataset
 python scripts/knn_skeleton_git.py     # Runs KNN on Skeleton dataset
 ```
 For other experiments, refer to the `.ipynb` notebooks in the `scripts/` directory.
-
+<!---
 ## Citation
 If you use this work, please cite:
 ```bibtex
@@ -99,6 +99,7 @@ If you use this work, please cite:
   year={Year}
 }
 ```
+---!>
 
 ## License
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
