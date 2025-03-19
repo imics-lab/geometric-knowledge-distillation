@@ -3,7 +3,7 @@
 We use two dataset in this project.
 
 ## Signum Dataset
-The [SIGNUM dataset](https://www.phonetik.uni-muenchen.de/Bas/SIGNUM/) contains 450 basic signs (*classes*) from German Sign Language (DGS), performed by 25 different signers. We extract 3D hand landmarks (21 points per hand) using MediaPipe Holistic [mediapipe](https://mediapipe.dev/), resulting in a 126-dimensional feature vector per frame (21 landmarks × 3 coordinates × 2 hands). The sequence length is 80 timesteps. Following standard practice for signer-independent evaluation, we split the dataset by signer ID:
+The [SIGNUM dataset](https://www.phonetik.uni-muenchen.de/Bas/SIGNUM/) contains 450 basic signs (*classes*) from German Sign Language (DGS), performed by 25 different signers. We extract 3D hand landmarks (21 points per hand) using MediaPipe Holistic [mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide), resulting in a 126-dimensional feature vector per frame (21 landmarks × 3 coordinates × 2 hands). The sequence length is 80 timesteps. Following standard practice for signer-independent evaluation, we split the dataset by signer ID:
 
 - **Training set**: 14 signers (IDs 1-14), 6,300 sequences
 - **Validation set**: 4 signers (IDs 15-18), 1,800 sequences
