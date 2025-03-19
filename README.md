@@ -8,6 +8,8 @@ This repository implements **Geometric Knowledge Distillation**, applying transf
 - **KNN (k-Nearest Neighbors)**
 - **Transformer-based models**
 - **Distillation models**
+
+### Framework Description
 ![image](https://github.com/user-attachments/assets/60b74573-49ab-46b9-b6b6-51c48bc1aa3e)
 
 The experiments are conducted on two datasets:
@@ -90,6 +92,27 @@ python scripts/knn_signum.py           # Runs KNN on Signum dataset
 python scripts/knn_skeleton_git.py     # Runs KNN on Skeleton dataset
 ```
 For other experiments, refer to the `.ipynb` notebooks in the `scripts/` directory.
+
+## Results and Discussion
+
+Tables below present the classification performance and computational efficiency of each approach on the SIGNUM and UTD-MHAD datasets, respectively.
+
+### Results on SIGNUM Dataset (Test Set)
+
+| Method                      | Acc. (%) | Prec. (%) | Rec. (%) | F1 (%) | Infer. Time (ms/sample) |
+|-----------------------------|----------|-----------|----------|--------|-------------------------|
+| Procrustes-DTW (k-NN)        | 63.9     | 68.2      | 64.4     | 63.1   | $3.6 \times 10^6$       |
+| Transformer (Direct)         | 86.9     | 89.5      | 87.1     | 86.6   | 0.22                    |
+| Ours (Distillation)          | 90.2     | 91.7      | 90.2     | 89.8   | 0.35                    |
+
+### Results on UTD-MHAD Dataset (Test Set)
+
+| Method                      | Acc. (%) | Prec. (%) | Rec. (%) | F1 (%) | Infer. Time (ms/sample) |
+|-----------------------------|----------|-----------|----------|--------|-------------------------|
+| Procrustes-DTW (k-NN)        | 31.9     | 38.9      | 32.1     | 28.4   | $1.89 \times 10^5$      |
+| Transformer (Direct)         | 57.5     | 60.9      | 57.6     | 55.6   | 0.21                    |
+| Ours (Distillation)          | 64.9     | 67.2      | 64.9     | 63.9   | 0.83                    |
+
 
 <!---
 ## Citation
