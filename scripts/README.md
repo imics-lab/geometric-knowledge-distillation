@@ -6,13 +6,13 @@ The following Python files and Jupyter notebook demos are provided for running e
 Run the `skeleton_procrustes.py` using the training set.
 
 ```bash
-python skeleton_procrustes.py --mode train
+python skeleton_procrustes.py 
 ```
 ### 2. Compute the Procrustes DTW distance for each train-test pair:
 Run the skeleton_procrustes.py using the test set.
 
 ```bash
-python skeleton_procrustes.py --mode test
+python skeleton_procrustes.py
 ```
 ### 3. K-Nearest Neighbors (KNN):
 To run the KNN algorithm on the dataset, use the knn_skeleton.py script.
