@@ -10,7 +10,7 @@ This repository implements **Geometric Knowledge Distillation**, applying transf
 - **Distillation models**
 
 ### Framework Description
-![image](https://github.com/user-attachments/assets/60b74573-49ab-46b9-b6b6-51c48bc1aa3e)
+![image](./docs/figures/distillation-framework.png)
 
 The experiments are conducted on two datasets:
 - **Skeleton Dataset** (included in the repository)
