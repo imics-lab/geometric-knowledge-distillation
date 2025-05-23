@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 
 #X_train = np.load('data_numpy/X_train.npy')
 #X_test = np.load('data_numpy/X_test.npy')
-y_train = np.load('../Skeleton_numpy/y_train.npy')
-y_test = np.load('../Skeleton_numpy/y_test.npy')
-distance_arr = np.load('distances_test_all.npy')
+y_train = np.load('../data/Skeleton_numpy/y_train.npy')
+y_test = np.load('../data/Skeleton_numpy/y_test.npy')
+distance_arr = np.load('../results/skeleton/distances_test_all.npy')
 
 k = 15
 acc_list = []
