@@ -1,4 +1,4 @@
-# Geometric Knowledge Distillation
+# Geometric Knowledge Distillation via Procrustes Analysis for Efficient Motion Sequence Classification
 
 ## Overview
 Motion sequence classification using geometric approaches like Procrustes analysis demonstrates high accuracy but suffers from computational inefficiency at inference time. We present a novel knowledge distillation framework that bridges this gap by transferring geometric understanding from Procrustes combined with Dynamic Time Warping (Procrustes-DTW) distance computations to an efficient neural network. Our approach uses pre-computed Procrustes-DTW distances to generate soft probability distributions that guide the training of a transformer-based student model. This ensures the preservation of crucial geometric properties—including shape similarities, temporal alignments, and invariance to spatial transformations—while enabling fast inference. We evaluate our framework on two challenging tasks: sign language recognition using the SIGNUM dataset and human action recognition using the UTD-MHAD dataset. Experimental results demonstrate that geometric knowledge transfer improves accuracy compared to training a deep neural network using standard supervised learning while achieving significantly faster inference times compared to distance-based approaches. The framework shows particular promise for real-time applications where both geometric understanding and computational efficiency are essential.
@@ -129,3 +129,17 @@ If you use this work, please cite:
 ## License
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
+## Citation
+
+If you use work in your research, please cite:
+
+```bibtex
+@inproceedings{de2025geometric,
+  title={Geometric Knowledge Distillation via Procrustes Analysis for Efficient Motion Sequence Classification},
+  author={De, Bikram and Blekos, Kostas and Pikoulis, Vasilis and Kosmopoulos, Dimitrios and Metsis, Vangelis},
+  booktitle={2025 25th International Conference on Digital Signal Processing (DSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
+}
+```
