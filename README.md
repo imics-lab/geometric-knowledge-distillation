@@ -131,7 +131,7 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 ## Citation
 
-If you use work in your research, please cite:
+If you use this work in your research, please cite:
 
 ```bibtex
 @inproceedings{de2025geometric,
